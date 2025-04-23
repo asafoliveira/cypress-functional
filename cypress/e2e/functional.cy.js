@@ -9,7 +9,12 @@ describe('Should test at functional level', () => {
         cy.get('.toast-message').should('contain', 'Bem vindo')
     })
 
-    it('...', () => {
-        
+    it('Should create an account', () => {
+        cy.get('[data-test="menu-settings"] > .fas').click()
+        cy.get('[href="/contas"]').click()
+        cy.get('[data-test="nome"]').type('Conta Teste')
+        cy.get('.btn').click()
+        cy.get('.toast-message').should('contain', 'Conta inserida com sucesso')
+
     })
 })
