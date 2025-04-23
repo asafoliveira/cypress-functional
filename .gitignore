@@ -1,0 +1,30 @@
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn.lock
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/         # se você estiver testando downloads
+cypress/e2e/**/__snapshots__/
+
+# Config files gerados automaticamente
+cypress.config.ts
+cypress.config.js
+
+# Diretórios de build/coverage (se usar ferramentas de coverage ou bundlers)
+dist/
+coverage/
+.build/
+.vite/
+
+# Arquivos do sistema/mac
+.DS_Store
+Thumbs.db
+
+# Ambiente
+.env
+.env.local
+.env.*.local
