@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import loc from '../../support/locators'
+
 describe('Should test at functional level', () => {
     beforeEach(() => {
         cy.visit('https://barrigareact.wcaquino.me/')
