@@ -8,7 +8,8 @@ const locators = {
     MENU: {
         SETTINGS: '[data-test="menu-settings"] > .fas',
         CONTAS: '[href="/contas"]',
-        RESET: '[href="/reset"]'
+        RESET: '[href="/reset"]',
+        MOVIMENTACAO: '[data-test="menu-movimentacao"]'
     },
 
     CONTAS: {
@@ -17,9 +18,14 @@ const locators = {
         XP_BTN_ALTERAR: "//table//td[contains(., 'Conta Teste')]/..//i[@class='far fa-edit']"
     },
 
+    MOVIMENTACAO: {
+        DESCRICAO: '[data-test="descricao"]',
+        VALOR: '[data-test="valor"]',
+        INTERESSADO: '[data-test="envolvido"]',
+        BTN_SALVAR: '.btn-primary'
+    },
+
     MESSAGE: '.toast-message'
 }
-
-    
 
 export default locators;
