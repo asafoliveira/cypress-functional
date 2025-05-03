@@ -49,4 +49,10 @@ describe('Should test at functional level', () => {
         cy.xpath(loc.SALDO.FN_XP_SALDO_CONTA('Conta para alterar')).should('contain', '123,00')
     })
 
+    it('Should remove a transaction', () => {
+        cy.get(loc.MENU.EXTRATO).click()
+        cy.xpath(loc.EXTRATO.FN_XP_REMOVER_ELEMENTO('Desc')).click()
+        cy.get(loc.MESSAGE).should('contain', 'sucesso')
+    })
+
 })
