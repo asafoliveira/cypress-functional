@@ -6,6 +6,7 @@ const locators = {
     },
 
     MENU: {
+        HOME: '[data-test="menu-home"]',
         SETTINGS: '[data-test="menu-settings"] > .fas',
         CONTAS: '[href="/contas"]',
         RESET: '[href="/reset"]',
@@ -22,7 +23,17 @@ const locators = {
         DESCRICAO: '[data-test="descricao"]',
         VALOR: '[data-test="valor"]',
         INTERESSADO: '[data-test="envolvido"]',
+        STATUS: '[data-test="status"]',
         BTN_SALVAR: '.btn-primary'
+    },
+
+    EXTRATO: {
+        LINHAS:'.list-group > li',
+        XP_BUSCA_ELEMENTO: '//span[text()="Desc"]'
+    },
+
+    SALDO: {
+        FN_XP_SALDO_CONTA: nome =>  `//td[contains(., '${nome}')]/../td[2]` 
     },
 
     MESSAGE: '.toast-message'
